@@ -1,4 +1,5 @@
 import React from 'react';
+import fernando_img from '../assets/fernando_alonso.jpg';
 
 export default function Profiles2() {
   return (
@@ -11,7 +12,7 @@ function Avatar({ person, size, h }) {
     <div>
       <figure>
         <img
-          src="https://www.si.com/.image/c_fill,w_1440,ar_16:9,f_auto,q_auto,g_auto/MTk4Nzc0ODM5NzIzNDM1Mzcx/untitled-design---2023-06-19t134619263.png"
+          src = {fernando_img}
           alt="Fernando Alonso"
           width={size}
           height={h}
