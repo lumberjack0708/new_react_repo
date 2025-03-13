@@ -10,6 +10,7 @@ import MyMoney from './components/MyMoney'; // 顯示身價的fn component
 import Compon from './components/Compon_base'; // 顯示多種呼叫範例模組的fn component(單一值)
 import Compons from './components/Compons_items'; // 顯示多種呼叫範例模組的fn component(多值)
 import Compons_list from './components/Compons_list'; // 顯示多種呼叫範例模組的fn component(多值)_list
+import Compons_ul from './components/Compons_ul';
 
 function App() {
   return (
@@ -63,6 +64,14 @@ function App() {
         <h2>Compon list</h2>
         <Compons_list />
       </div>
+      <hr/>
+
+      {/* Compons_ul寫法 */}
+      <div>
+        <h2>Compon ul</h2>
+        <Compons_ul />
+      </div>
+      <hr/>
     </>
   );
 }
