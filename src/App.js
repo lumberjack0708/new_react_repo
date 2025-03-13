@@ -70,7 +70,7 @@ function App() {
       {/* Compons_ul寫法 */}
       <div>
         <h2>Compon ul</h2>
-        <Compons_ul />
+        <Compons_ul />  
       </div>
       <hr/>
 

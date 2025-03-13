@@ -1,8 +1,9 @@
-function Compon(props) {
+function Compon_N_list(props) {
     return(
         <>
-            <h4>Hi, {props.name},</h4>
+            <h4>Hi, {props.name} {props.name1}</h4>
+            {/* 晚上要呼叫這個fn */}
         </>
     );
 }
-export default Compon;
+export default Compon_N_list;

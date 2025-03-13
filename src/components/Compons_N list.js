@@ -17,4 +17,4 @@ function Compons_N_list() {
         </>
     );
 }
-export default Compons_N_list;
+export default Compons_list;
