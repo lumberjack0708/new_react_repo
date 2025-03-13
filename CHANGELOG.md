@@ -1,5 +1,10 @@
 # 版本變更紀錄
 
+[1.1.2] - 2025-03-13
+### added
+   - 於`README.md`中新增連結指向`CHANGELOG.md`
+
+
 ## [1.1.1] - 2025-03-13
 ### Fixed
    - `CHANGELOG.MD`檔名修正，使其能被GitHub正確渲染
