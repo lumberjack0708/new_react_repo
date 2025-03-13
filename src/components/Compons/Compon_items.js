@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Compon(props) {
+function Compon_items(props) {
     return (
         <h1>A Component. {props.item}</h1>
     );
 }
 
-export default Compon;
+export default Compon_items;

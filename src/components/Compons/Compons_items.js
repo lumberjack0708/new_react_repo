@@ -1,7 +1,7 @@
 import React from 'react';
-import Compon_v1 from './Compon_items';
+import Compon_items from './Compon_items';
 
-function Compons() {
+function Compons_items() {
     // 創建一個包含不同名字的陣列
     const compons = Array.from({ length: 4 });
     var list = ['A', 'B', 'C', 'D'];
@@ -10,11 +10,11 @@ function Compons() {
         <div>
             <main>
                 {compons.map((_, index) => (
-                    <Compon_v1 key={index} item={list[index]} />
+                    <Compon_items key={index} item={list[index]} />
                 ))}
             </main>
         </div>
     );
 }
 
-export default Compons;
+export default Compons_items;

@@ -7,13 +7,12 @@ import Gallery from './components/Gallery'; // 顯示圖片的fn component
 import Blog from './components/Blogs'; // 顯示部落格的fn component
 import Welcome from './components/Welcome'; // 顯示歡迎訊息的fn component
 import MyMoney from './components/MyMoney'; // 顯示身價的fn component
-import Compon from './components/Compons/Compon_base'; // 顯示多種呼叫範例模組的fn component(單一值)
-import Compons from './components/Compons/Compons_items'; // 顯示多種呼叫範例模組的fn component(多值)
-import Compons_list from './components/Compons/Compons_list'; // 顯示多種呼叫範例模組的fn component(多值)_list
-import Compons_ul from './components/Compons/Compons_ul';
-import Compons_N_list from './components/Compons/Compons_N list';
+import ComponSwitcher from './components/Compons/ComponSwitcher'; // 元件切換器
 
 function App() {
+  // 範例資料
+  const sampleData = ['項目1', '項目2', '項目3', '項目4', '項目5', '項目6', '項目7', '項目8', '項目9', '項目10'];
+  
   return (
     <>
       <div>
@@ -43,43 +42,23 @@ function App() {
       {/* 身價模組 */}
       <MyMoney />
 
-      {/* 多次呼叫的範例(單一值) */}
-      <div> 
-        <h2>Compon基礎呼叫</h2>
-        <Compon name="compon"/>
-        <Compon name="compon"/>
-        <Compon name="compon"/>
-        <Compon name="compon"/>
-      </div>
-      <hr/>
-
-      {/* 多次呼叫的範例(items) */}
-      <div>
-        <h2>Compon items多次呼叫</h2>
-        <Compons />
-      </div>
-      <hr/>
-
-      {/*  多次呼叫的範例_list */}
-      <div>
-        <h2>Compon list</h2>
-        <Compons_list />
-      </div>
-      <hr/>
-
-      {/* Compons_ul寫法 */}
-      <div>
-        <h2>Compon ul</h2>
-        <Compons_ul />  
-      </div>
-      <hr/>
-
-      {/* N list compons */}
-      <div>
-        <h2>Compon N list</h2>
-        <Compons_N_list />
-      </div>
-      <hr/>
+      {/* 使用 ComponSwitcher 切換不同元件類型 */}
+      <h1>元件切換示範</h1>
+      
+      {/* 基礎元件 */}
+      <ComponSwitcher type="compon" />
+      
+      {/* items元件 */}
+      <ComponSwitcher type="items" />
+      
+      {/* 列表元件 */}
+      <ComponSwitcher type="list" />
+      
+      {/* 嵌套列表元件 */}
+      <ComponSwitcher type="nlist" />
+      
+      {/* 無序列表元件 */}
+      <ComponSwitcher type="ul" data={sampleData} />
     </>
   );
 }
