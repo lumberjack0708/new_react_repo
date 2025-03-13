@@ -11,6 +11,7 @@ import Compon from './components/Compon_base'; // 顯示多種呼叫範例模組
 import Compons from './components/Compons_items'; // 顯示多種呼叫範例模組的fn component(多值)
 import Compons_list from './components/Compons_list'; // 顯示多種呼叫範例模組的fn component(多值)_list
 import Compons_ul from './components/Compons_ul';
+import Compons_N_list from './components/Compons_N list';
 
 function App() {
   return (
@@ -70,6 +71,13 @@ function App() {
       <div>
         <h2>Compon ul</h2>
         <Compons_ul />
+      </div>
+      <hr/>
+
+      {/* N list compons */}
+      <div>
+        <h2>Compon N list</h2>
+        <Compons_N_list />
       </div>
       <hr/>
     </>
