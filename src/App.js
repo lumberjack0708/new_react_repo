@@ -7,11 +7,11 @@ import Gallery from './components/Gallery'; // 顯示圖片的fn component
 import Blog from './components/Blogs'; // 顯示部落格的fn component
 import Welcome from './components/Welcome'; // 顯示歡迎訊息的fn component
 import MyMoney from './components/MyMoney'; // 顯示身價的fn component
-import Compon from './components/Compon_base'; // 顯示多種呼叫範例模組的fn component(單一值)
-import Compons from './components/Compons_items'; // 顯示多種呼叫範例模組的fn component(多值)
-import Compons_list from './components/Compons_list'; // 顯示多種呼叫範例模組的fn component(多值)_list
-import Compons_ul from './components/Compons_ul';
-import Compons_N_list from './components/Compons_N list';
+import Compon from './components/Compons/Compon_base'; // 顯示多種呼叫範例模組的fn component(單一值)
+import Compons from './components/Compons/Compons_items'; // 顯示多種呼叫範例模組的fn component(多值)
+import Compons_list from './components/Compons/Compons_list'; // 顯示多種呼叫範例模組的fn component(多值)_list
+import Compons_ul from './components/Compons/Compons_ul';
+import Compons_N_list from './components/Compons/Compons_N list';
 
 function App() {
   return (
