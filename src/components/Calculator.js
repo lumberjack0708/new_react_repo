@@ -1,33 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-function add({ a, b }) {
-  return a + b;
-}
+export default function Calculator() {
+  const [a, setA] = useState(16);
+  const [b, setB] = useState(44);
 
-function subtract({ a, b }) {
-  return a - b;
-}
-
-function multiply({ a, b }) {
-  return a * b;
-}
-
-function divide({ a, b }) {
-  if (b === 0) {
-    return 'Cannot divide by zero';
-  }
-  return a / b;
-}
-
-function Calculator({ a, b }) {
   return (
-    <div>
-      <span>和: {add({ a, b })}</span>&emsp;
-      <span>差: {subtract({ a, b })}</span>&emsp;
-      <span>積: {multiply({ a, b })}</span>&emsp;
-      <span>商: {divide({ a, b })}</span>&emsp;
+    <>
+    <div className='calculator'>
+      <p>
+        a: <input type="number" value={a} onChange={(e) => setA(Number(e.target.value))} />
+      </p>
+      <p>
+        b: <input type="number" value={b} onChange={(e) => setB(Number(e.target.value))} />
+      </p>
     </div>
+    <div>
+      <p>計算結果：{a + b}</p>
+    </div>
+    </>
   );
 }
-
-export default Calculator;

@@ -43,7 +43,9 @@
 }
 .calculator {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start; /* 改用 flex-start 讓元素靠左對齊 */
+  align-items: center;
+  gap: 10px; /* 調整這個值來控制間距 */
 }
 .gallery {
   display: flex;
@@ -57,4 +59,21 @@
   gap: 20px;
   width: 100%;
   max-width: 800px;
+}
+.money-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.money-btn:hover {
+  background-color: #45a049;
+}
+.calculator p {
+  margin: 10px 0;
 }
