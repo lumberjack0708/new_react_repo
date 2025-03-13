@@ -1,5 +1,5 @@
 import React from 'react';
-import Compon from './Compon_base';
+import Compon_N_list from './Compon_N list';
 
 function Compons_N_list() {
     // 創建一個包含不同名字的陣列
@@ -11,10 +11,10 @@ function Compons_N_list() {
         <>
         <main>
             {compons.map((_, index) => (
-                <Compon key={index} name={list[index]} name1={list1[index]}/>
+                <Compon_N_list key={index} name={list[index]} name1={list1[index]}/>
             ))}
         </main>
         </>
     );
 }
-export default Compons_list;
+export default Compons_N_list;
