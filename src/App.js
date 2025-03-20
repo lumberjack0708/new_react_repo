@@ -12,6 +12,7 @@ import UseStatePr from './components/useStatePr'; // useState練習
 import UseStatePr2 from './components/UseStatePr2'; // useState練習2
 import UseStatePr3 from './components/UseStatePr3'; // useState練習3
 import UseStateNum from './components/UseStateNum'; // useState練習4
+import UseStatePr5 from './components/UseStatePr5'; // useState練習5
 
 function App() {
   // 範例資料
@@ -79,6 +80,10 @@ function App() {
       {/* useState +1 -1 */}
       <h2>useState練習4：+1 -1</h2>
       <UseStateNum />
+
+      {/* useState5 */}
+      <h2>useState練習5：購物車</h2>
+      <UseStatePr5 />
     </>
   );
 }
