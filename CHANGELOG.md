@@ -1,10 +1,16 @@
 # 版本變更紀錄
 
-[1.2.0] - 2025-03-20
+## [1.2.0] - 2025-03-20
 ### added
    - 新增useState元件，含多種useState調用方法
 
-[1.1.2] - 2025-03-13
+### Improve
+   - 優化useState的路徑，統一放在`UseStates`資料夾內
+
+### fixed
+   - 將部分程式碼與新撰寫的程式碼變數命名方式修正為Pascal case，以符合React官方規範
+
+## [1.1.2] - 2025-03-13
 ### added
    - 於`README.md`中新增連結指向`CHANGELOG.md`
 
