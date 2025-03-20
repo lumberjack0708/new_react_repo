@@ -4,7 +4,7 @@
 ### added
    - 新增useState元件，含多種useState調用方法
 
-### Improve
+### Improved
    - 優化useState的路徑，統一放在`UseStates`資料夾內
 
 ### fixed
@@ -17,7 +17,7 @@
 
 ## [1.1.1] - 2025-03-13
 ### Fixed
-   - `CHANGELOG.MD`檔名修正，使其能被GitHub正確渲染(ao6)
+   - `CHANGELOG.MD`檔名修正，使其能被GitHub正確渲染(沒用，github根本不會預設渲染版更記錄)
 
 
 ## [1.0.0] - 2025-03-13
@@ -38,7 +38,7 @@
    - 統一參數傳遞模式，使用 `data` 參數傳入各元件
    - 實作條件渲染邏輯
 
-### Improve
+### Improved
 
 1. **程式碼結構優化**
    - 將元件切換邏輯集中到單一檔案，提高可維護性
