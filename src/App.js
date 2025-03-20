@@ -8,7 +8,8 @@ import Blog from './components/Blogs'; // 顯示部落格的fn component
 import Welcome from './components/Welcome'; // 顯示歡迎訊息的fn component
 import MyMoney from './components/MyMoney'; // 顯示身價的fn component
 import ComponSwitcher from './components/Compons/ComponSwitcher'; // 元件切換器
-import UseStatePr from './components/Compons/useStatePr'; // useState練習
+import UseStatePr from './components/useStatePr'; // useState練習
+import UseStatePr2 from './components/UseStatePr2'; // useState練習2
 
 function App() {
   // 範例資料
@@ -61,8 +62,14 @@ function App() {
       {/* 無序列表元件 */}
       {/* <ComponSwitcher type="ul" data={sampleData} /> */}
 
+      <hr />
+
       {/* useState練習 */}
+      <h2>useState練習1：取值</h2>
       <UseStatePr />
+
+      {/* useState練習2 */}
+      <UseStatePr2 />
     </>
   );
 }
