@@ -8,11 +8,11 @@ import Blog from './components/Blogs'; // 顯示部落格的fn component
 import Welcome from './components/Welcome'; // 顯示歡迎訊息的fn component
 import MyMoney from './components/MyMoney'; // 顯示身價的fn component
 import ComponSwitcher from './components/Compons/ComponSwitcher'; // 元件切換器
-import UseStatePr from './components/useStatePr'; // useState練習
-import UseStatePr2 from './components/UseStatePr2'; // useState練習2
-import UseStatePr3 from './components/UseStatePr3'; // useState練習3
-import UseStateNum from './components/UseStateNum'; // useState練習4
-import UseStatePr5 from './components/UseStatePr5'; // useState練習5
+import UseStatePr from './components/UseStates/useStatePr'; // useState練習
+import UseStatePr2 from './components/UseStates/UseStatePr2'; // useState練習2
+import UseStatePr3 from './components/UseStates/UseStatePr3'; // useState練習3
+import UseStateNum from './components/UseStates/UseStateNum'; // useState練習4
+import UseStatePr5 from './components/UseStates/UseStatePr5'; // useState練習5
 
 function App() {
   // 範例資料

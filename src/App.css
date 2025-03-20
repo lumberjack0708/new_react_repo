@@ -43,9 +43,9 @@
 }
 .calculator {
   display: flex;
-  justify-content: flex-start; /* 改用 flex-start 讓元素靠左對齊 */
+  justify-content: flex-start;
   align-items: center;
-  gap: 10px; /* 調整這個值來控制間距 */
+  gap: 10px;
 }
 .gallery {
   display: flex;
@@ -76,4 +76,79 @@
 }
 .calculator p {
   margin: 10px 0;
+}
+/* UseStateNum */
+.num-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.num-display {
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+
+/* UseStatePr5 */
+.shopping-cart-container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-field {
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity-button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.quantity-display {
+  font-size: 18px;
+  margin: 0 10px;
+  min-width: 30px;
+  text-align: center;
+}
+
+.order-summary {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+.summary-item {
+  margin: 5px 0;
+}
+
+.error-message {
+  color: red;
+  margin: 5px 0;
+}
+
+.warning-message {
+  color: orange;
+  margin: 5px 0;
 }
