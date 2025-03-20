@@ -1,8 +1,9 @@
 import React from 'react';
 import Compon from './Compon_base';          // 引入基礎元件
-import Compon_items from './Compon_items';   // 引入項目元件
-import Compon_N_list from './Compon_N list'; // 引入嵌套列表元件
-import Compon_ul from './Compon_ul';         // 引入無序列表元件
+// 修改元件引入命名為 PascalCase
+import ComponItems from './ComponItems';   // 引入項目元件
+import ComponNList from './ComponNList'; // 引入嵌套列表元件
+import ComponUl from './ComponUl';         // 引入無序列表元件
 
 /**
  * 修改後的單一項目元件(items) - 多個項目渲染
@@ -17,9 +18,9 @@ const ItemComponent = ({ items }) => {
     return (
         <div>
             <main>
-                {/* 使用map方法將每個項目渲染為Compon_items元件 */}
+                {/* 使用map方法將每個項目渲染為ComponItems元件 (修改元件命名) */}
                 {compons.map((_, index) => (
-                    <Compon_items key={index} item={list[index]} />
+                    <ComponItems key={index} item={list[index]} />
                 ))}
             </main>
         </div>
@@ -63,9 +64,9 @@ const NestedListComponent = ({ items, items1 }) => {
     return(
         <>
         <main>
-            {/* 使用map方法將兩層資料傳遞給Compon_N_list元件 */}
+            {/* 使用map方法將兩層資料傳遞給ComponNList元件 (修改元件命名) */}
             {compons.map((_, index) => (
-                <Compon_N_list 
+                <ComponNList 
                     key={index} 
                     name={list[index]}  // 第一層資料 (小寫)
                     name1={list1[index]} // 第二層資料 (大寫)
@@ -89,15 +90,14 @@ const ULComponent = ({ items }) => {
     return (
         <>
             <ul>
-                {/* 使用map方法將每個項目渲染為Compon_ul元件 */}
+                {/* 使用map方法將每個項目渲染為ComponUl元件 (修改元件命名) */}
                 {compons.map((_, index) => (
-                    <Compon_ul key={index} item={list[index]} />
+                    <ComponUl key={index} item={list[index]} />
                 ))}
             </ul>
         </>
     );
 };
-
 
 /**
  * 邏輯閥元件 - 根據類型選擇要渲染的元件
