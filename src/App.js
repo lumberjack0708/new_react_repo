@@ -7,7 +7,7 @@ import Gallery from './components/Gallery'; // 顯示圖片的fn component
 import Blog from './components/Blogs'; // 顯示部落格的fn component
 import Welcome from './components/Welcome'; // 顯示歡迎訊息的fn component
 import MyMoney from './components/MyMoney'; // 顯示身價的fn component
-import ComponSwitcher from './components/Compons/ComponSwitcher'; // 元件切換器
+// import ComponSwitcher from './components/Compons/ComponSwitcher'; // 元件切換器
 import UseStatePr from './components/UseStates/useStatePr'; // useState練習
 import UseStatePr2 from './components/UseStates/UseStatePr2'; // useState練習2
 import UseStatePr3 from './components/UseStates/UseStatePr3'; // useState練習3
@@ -16,7 +16,7 @@ import UseStatePr5 from './components/UseStates/UseStatePr5'; // useState練習5
 
 function App() {
   // 範例資料
-  const sampleData = ['項目1', '項目2', '項目3', '項目4', '項目5', '項目6', '項目7', '項目8', '項目9', '項目10'];
+  // const sampleData = ['項目1', '項目2', '項目3', '項目4', '項目5', '項目6', '項目7', '項目8', '項目9', '項目10'];
   
   return (
     <>
