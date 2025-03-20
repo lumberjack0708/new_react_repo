@@ -1,7 +1,7 @@
 import React from 'react';
 import Compon_N_list from './Compon_N list';
 
-function Compons_N_list() {
+function Compons_list() {
     // 創建一個包含不同名字的陣列
     const compons = Array.from({ length: 10 });
     var list = ['a','b','c','d','e','f','g','h','i','j']; 
