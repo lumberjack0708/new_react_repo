@@ -10,6 +10,7 @@ import MyMoney from './components/MyMoney'; // 顯示身價的fn component
 import ComponSwitcher from './components/Compons/ComponSwitcher'; // 元件切換器
 import UseStatePr from './components/useStatePr'; // useState練習
 import UseStatePr2 from './components/UseStatePr2'; // useState練習2
+import UseStatePr3 from './components/UseStatePr3'; // useState練習3
 
 function App() {
   // 範例資料
@@ -70,6 +71,9 @@ function App() {
 
       {/* useState練習2 */}
       <UseStatePr2 />
+
+      {/* useState練習3 */}
+      <UseStatePr3 />
     </>
   );
 }
