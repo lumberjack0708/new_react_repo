@@ -11,6 +11,7 @@ import ComponSwitcher from './components/Compons/ComponSwitcher'; // 元件切�
 import UseStatePr from './components/useStatePr'; // useState練習
 import UseStatePr2 from './components/UseStatePr2'; // useState練習2
 import UseStatePr3 from './components/UseStatePr3'; // useState練習3
+import UseStateNum from './components/UseStateNum'; // useState練習4
 
 function App() {
   // 範例資料
@@ -74,6 +75,10 @@ function App() {
 
       {/* useState練習3 */}
       <UseStatePr3 />
+
+      {/* useState +1 -1 */}
+      <h2>useState練習4：+1 -1</h2>
+      <UseStateNum />
     </>
   );
 }
