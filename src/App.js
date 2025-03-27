@@ -14,6 +14,7 @@ import UseStatePr3 from './components/UseStates/UseStatePr3'; // useState練習3
 import UseStateNum, {NumberWithLimitByHTML, NumberWithLimitByDisable} from './components/UseStates/UseStateNum'; // useState練習4
 import UseStatePr5 from './components/UseStates/UseStatePr5'; // useState練習5
 import StartRating from './components/StartRating'; // 評分
+import ProductList from "./components/ProductList";
 
 function App() {
   // 範例資料
@@ -96,7 +97,9 @@ function App() {
 
       {/* 評分 */}
       <h2>0327useState練習4：評分</h2>
-      <StartRating totalStars={1644} />
+      <StartRating totalStars={5} />
+
+      <ProductList />
     </>
   );
 }
