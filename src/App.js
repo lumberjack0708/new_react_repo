@@ -11,7 +11,7 @@ import MyMoney from './components/MyMoney'; // 顯示身價的fn component
 import UseStatePr from './components/UseStates/useStatePr'; // useState練習
 import UseStatePr2 from './components/UseStates/UseStatePr2'; // useState練習2
 import UseStatePr3 from './components/UseStates/UseStatePr3'; // useState練習3
-import UseStateNum from './components/UseStates/UseStateNum'; // useState練習4
+import UseStateNum, {NumberWithLimitByHTML, NumberWithLimitByDisable} from './components/UseStates/UseStateNum'; // useState練習4
 import UseStatePr5 from './components/UseStates/UseStatePr5'; // useState練習5
 
 function App() {
@@ -80,6 +80,14 @@ function App() {
       {/* useState +1 -1 */}
       <h2>useState練習4：+1 -1</h2>
       <UseStateNum />
+
+      {/* useState +1 -1 限制(按鈕不見) */}
+      <h2>0327useState練習2：+1 -1 限制版(按鈕不見)</h2>
+      <NumberWithLimitByHTML />
+
+      {/* useState +1 -1 限制(按鈕禁用) */}
+      <h2>0327useState練習3：+1 -1 限制版(按鈕禁用)</h2>
+      <NumberWithLimitByDisable />
 
       {/* useState5 */}
       <h2>useState練習5：購物車</h2>
