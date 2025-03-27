@@ -95,7 +95,7 @@ function App() {
       <UseStatePr5 />
 
       {/* 評分 */}
-      <h2>評分</h2>
+      <h2>0327useState練習4：評分</h2>
       <StartRating totalStars={1644} />
     </>
   );
