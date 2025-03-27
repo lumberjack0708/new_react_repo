@@ -13,6 +13,7 @@ import UseStatePr2 from './components/UseStates/UseStatePr2'; // useState練習2
 import UseStatePr3 from './components/UseStates/UseStatePr3'; // useState練習3
 import UseStateNum, {NumberWithLimitByHTML, NumberWithLimitByDisable} from './components/UseStates/UseStateNum'; // useState練習4
 import UseStatePr5 from './components/UseStates/UseStatePr5'; // useState練習5
+import StartRating from './components/StartRating'; // 評分
 
 function App() {
   // 範例資料
@@ -92,6 +93,10 @@ function App() {
       {/* useState5 */}
       <h2>useState練習5：購物車</h2>
       <UseStatePr5 />
+
+      {/* 評分 */}
+      <h2>評分</h2>
+      <StartRating totalStars={1644} />
     </>
   );
 }
