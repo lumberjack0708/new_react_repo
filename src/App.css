@@ -152,3 +152,150 @@
   color: orange;
   margin: 5px 0;
 }
+/* ProductList 元件的樣式 */
+.product-list-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  width: 200px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-image-container {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.product-price {
+  font-weight: bold;
+}
+
+.product-description {
+  font-size: 12px;
+  height: 40px;
+  overflow: hidden;
+}
+
+.product-quantity-control {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-quantity-button {
+  padding: 5px 10px;
+}
+
+.product-quantity-display {
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.toggle-cart-button {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.toggle-cart-button:hover {
+  background-color: #45a049;
+}
+/* CartSummary 元件的樣式 */
+.cart-summary-container {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-table th {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-table th.center {
+  text-align: center;
+}
+
+.cart-table th.right {
+  text-align: right;
+}
+
+.cart-table td {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-table td.center {
+  text-align: center;
+}
+
+.cart-table td.right {
+  text-align: right;
+  font-weight: bold;
+}
+
+.cart-item-container {
+  display: flex;
+  align-items: center;
+}
+
+.cart-item-image-container {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.cart-item-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cart-item-name {
+  margin: 0;
+}
+
+.cart-item-rating {
+  margin: 0;
+  font-size: 12px;
+  color: #666;
+}
+
+.cart-summary-footer {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-total {
+  font-weight: bold;
+}
