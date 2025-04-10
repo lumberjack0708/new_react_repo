@@ -334,3 +334,11 @@
   -webkit-line-clamp: 3; /* 限制最多顯示三行 */
   -webkit-box-orient: vertical;
 }
+
+/* 在 App.css 添加或修改 */
+.product-rating {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center; /* 水平置中 */
+  align-items: center; /* 垂直置中 */
+}
