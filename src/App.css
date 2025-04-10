@@ -299,3 +299,38 @@
 .cart-total {
   font-weight: bold;
 }
+/* ProductList 元件的樣式 */
+.product-title-container {
+  height: 48px; /* 固定高度約兩行文字 */
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.product-title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.4;
+  max-height: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* 限制最多顯示兩行 */
+  -webkit-box-orient: vertical;
+}
+
+.product-description-container {
+  height: 60px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* 限制最多顯示三行 */
+  -webkit-box-orient: vertical;
+}

@@ -30,6 +30,7 @@ export default function ProductList() {
       <div className="product-list-container">
         {products.map((item) => (
           <div key={item.id} className="product-card">
+            {/* 商品圖片區塊 */}
             <div className="product-image-container">
               <img 
                 src={item.image} 
@@ -37,20 +38,34 @@ export default function ProductList() {
                 className="product-image"
               />
             </div>
-            <h4>{item.name}</h4>
+            
+            {/* 商品名稱區塊 - 新增固定高度和溢出處理 */}
+            <div className="product-title-container">
+              <h4 className="product-title" title={item.name}>{item.name}</h4>
+            </div>
+            
+            {/* 商品價格區塊 */}
             {item.price && (
               <p className="product-price">${item.price.toLocaleString()}</p>
             )}
+            
+            {/* 商品描述區塊 */}
             {item.description && (
-              <p className="product-description">{item.description}</p>
+              <div className="product-description-container">
+                <p className="product-description">{item.description}</p>
+              </div>
             )}
-            <div>
+            
+            {/* 商品評分區塊 */}
+            <div className="product-rating">
               <StartRating
                 totalStars={5}
                 selectedStars={item.rating}
                 onRate={(newRating) => handleRatingChange(item.id, newRating)}
               />
             </div>
+            
+            {/* 商品數量控制區塊 */}
             <div className="product-quantity-control">
               <button 
                 onClick={() => handleQuantity(item.id, "dec")}
